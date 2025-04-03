@@ -1,0 +1,70 @@
+.b-desktop {
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+
+    &>[bx-item] {
+        padding: 2px 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        cursor: default;
+        position: relative;
+        width: 54px;
+
+        &>[bx-icon] {
+            user-select: none;
+            width: 32px;
+            height: 32px;
+            outline: none;
+        }
+
+        &>[bx-title] {
+            margin-top: 6px;
+            font-size: 10px;
+            color: #fff;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        &>[bx-status] {
+            position: absolute;
+            top: 0%;
+            right: 5%;
+            margin: 0;
+            background: red;
+            border-radius: 5px;
+            padding: 0 2px;
+            font-size: 8px;
+            color: #fff;
+        }
+
+        &:hover {
+            background: rgba(0, 195, 255, 0.2);
+            outline: 1px solid rgb(0, 195, 255);
+        }
+
+        &:active {
+            background: rgba(0, 195, 255, 0.5);
+        }
+
+        &:focus,
+        &:focus-within {
+            background: rgba(0, 195, 255, 0.5);
+        }
+    }
+
+    [bx-bar] {
+        background-color: red;
+        width: 100%;
+    }
+
+    &>[bx-space]{
+    flex: 1 1 100%;
+    text-shadow: 1px 1px 2px black;
+    background: rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    }
+}

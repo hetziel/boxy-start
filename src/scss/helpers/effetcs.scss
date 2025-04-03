@@ -1,0 +1,19 @@
+
+.bx-efx[efx="pulse"]{
+    animation: pulse-effect 2s linear infinite;
+}
+
+@keyframes pulse-effect {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

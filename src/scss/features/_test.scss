@@ -1,0 +1,326 @@
+.b-table {
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 5px;
+    overflow: auto;
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+
+        td,
+        th {
+            width: 30%;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            min-width: 20px;
+            padding: 0.5em 2em;
+        }
+    }
+}
+
+.fit-content {
+    width: fit-content;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.me-1-all {
+    >* {
+        margin-right: .5em;
+        margin-top: 0.5em;
+    }
+
+    >*:last-child {
+        margin-right: 0;
+    }
+}
+
+.ib {
+    display: inline-block;
+}
+
+sp {
+    display: inline-block;
+    width: 40px;
+}
+
+.b-header-2 {
+    background-color: rgb(205, 0, 55);
+    border: black;
+    border-width: 2px;
+    box-shadow: 0px 3px 20px 3px rgba(0, 0, 0, 0.06);
+    padding: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo {
+    img {
+        transition: 0.2s;
+        height: 50px;
+    }
+}
+
+.menu {
+    float: right;
+    display: flex;
+    align-items: center;
+    background: yellow;
+    height: 50px;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding-left: 0;
+
+        li {
+            display: inline;
+        }
+    }
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #1c3664;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 2px solid transparent;
+
+    &:hover {
+        background: rgba(247, 202, 24, 0.1);
+        border: 2px solid #F7CA18;
+        border-radius: 20px;
+        transition: 0.2s;
+    }
+}
+
+.icon {
+    display: none;
+    font-weight: 900 !important;
+    font-size: 27px !important;
+    padding: 0;
+    margin: 0;
+}
+
+menu.responsive {
+    position: relative;
+}
+
+menu.responsive {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+@media screen and (max-width: 576px) {
+    .menu ul li {
+        display: none;
+    }
+
+    .icon {
+        display: flex;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+}
+
+.space {
+    line-height: 22px;
+}
+
+.b-data {
+    font-weight: bold;
+    font-size: 12px;
+
+    &>span {
+        display: block;
+    }
+
+    [title] {
+        color: rgb(0, 0, 0);
+    }
+
+    [value] {
+        color: rgb(93, 93, 93);
+    }
+}
+
+.b-loader {
+    font-weight: bold;
+    font-size: 12px;
+    width: 100%;
+
+    &>span {
+        display: block;
+    }
+
+    [title] {
+        color: rgb(0, 0, 0);
+    }
+
+    [value] {
+        margin-top: 5px;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 10px;
+        position: relative;
+
+        &::after {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+        }
+    }
+
+    [value="1"]::after {
+        width: 10%;
+    }
+
+    [value="2"]::after {
+        width: 20%;
+    }
+
+    [value="3"]::after {
+        width: 30%;
+    }
+
+    [value="4"]::after {
+        width: 40%;
+    }
+
+    [value="5"]::after {
+        width: 50%;
+    }
+
+    [value="6"]::after {
+        width: 60%;
+    }
+
+    [value="7"]::after {
+        width: 70%;
+    }
+
+    [value="8"]::after {
+        width: 80%;
+    }
+
+    [value="9"]::after {
+        width: 90%;
+    }
+
+    [value="10"]::after {
+        width: 100%;
+    }
+}
+
+.b-list {
+    display: block;
+
+    &::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: black;
+        display: inline-block;
+        margin-right: 0.5em;
+    }
+}
+
+
+//test nav
+
+.b-menu-x {
+    width: 100%;
+    max-width: 25rem;
+    padding: 2rem;
+    margin: 3rem auto;
+    background: hsl(0, 0%, 14%);
+    border-radius: 1rem;
+    border: 1px solid #222;
+    box-shadow: 0px 0px 34px -8px rgba(0, 0, 0, 0.55);
+
+    .accordion {
+        background-color: #333;
+        color: #eee;
+        cursor: pointer;
+        padding: 1rem;
+        width: 100%;
+        border: 1px solid #222;
+        text-align: left;
+        outline: none;
+        font-size: 1rem;
+        transition: all 0.4s ease-out;
+        box-shadow: 0px 0px 34px -8px rgba(0, 0, 0, 0.75);
+
+        &:first-child {
+            border-radius: 1rem 1rem 0 0;
+        }
+
+        &:nth-last-child(1) {
+            border-radius: 0 0 1rem 1rem;
+        }
+
+        &:nth-last-child(1):hover {
+            background: crimson;
+        }
+
+        &:after {
+            content: "\002B";
+            color: #eee;
+            font-weight: bold;
+            float: right;
+            margin-left: 0.5rem;
+        }
+
+    }
+
+
+    .active,
+    .accordion:hover {
+        background-color: #426ef0;
+    }
+
+    
+
+    .active:after {
+        content: "\2212";
+    }
+
+    .accordion-content {
+        padding: 0 1rem;
+        background-color: #222;
+        color: #aaa;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+
+        & ul {
+            list-style-type: circle;
+            margin: 1rem 0;
+            padding: 0.2rem;
+        }
+    
+        & ul li {
+            padding: 0.2rem 0;
+        }
+    }
+
+ 
+}

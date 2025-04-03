@@ -1,0 +1,40 @@
+@use "top-header";
+@use "header";
+@use "footer";
+@use "section";
+@import '../colors/colors';
+@import "../grid/variables";
+
+.b-header~.b-body,
+.b-side {
+    height: calc(100vh - var(--b-header-height));
+}
+// nuevo 18/11
+.b-header~.b-body{
+    overflow: hidden;
+}
+
+.b-body {
+    height: 100vh;
+    overflow: auto;
+    width: -webkit-fill-available;
+    display: flex;
+    flex-wrap: wrap; // nuevo
+}
+
+.b-main {
+    overflow: auto;
+    flex: 1;
+    scroll-behavior: smooth;
+    height: 100%; //nuevo 18/11
+}
+
+.toggle {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: rgba($dark-gray, 0.8);
+    position: absolute;
+    z-index: 1;
+    border-radius: 0 5px 5px 0;
+}

@@ -1,0 +1,47 @@
+@import '../colors/colors';
+
+[bd="none"]{
+    border: 0;
+}
+
+.bd-1{
+    border-width: 1px;
+}
+.bd-2{
+    border-width: 2px;
+}
+.bd-3{
+    border-width: 3px;
+}
+.bd-4{
+    border-width: 4px;
+}
+.bd-5{
+    border-width: 5px;
+}
+.bd-6{
+    border-width: .5rem;
+}
+.bd-7{
+    border-width: 1rem;
+}
+.bd-8{
+    border-width: 1.5rem;
+}
+.bd-9{
+    border-width: 2rem;
+}
+.bd-10{
+    border-width: 2.5rem;
+}
+
+.bd{
+ 
+    &--turq{
+        border-color: $turq;
+    }
+}
+
+[class*="bd"]{
+    border-style: solid;
+}

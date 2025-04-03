@@ -1,0 +1,132 @@
+@import '../colors/colors';
+.b-input {
+    .icon {
+        // Colores de iconos
+        &[color="purple"] {
+            color: $purple !important;
+            &:hover {
+                background: white;
+                &::before {
+                    background: rgba($purple, 16%) !important;
+                }
+            }
+        }
+        &[color="yellow"] {
+            color: $yellow !important;
+            &:hover {
+                background: white;
+                &::before {
+                    background: rgba($yellow, 16%) !important;
+                }
+            }
+        }
+        &[color="red"] {
+            color: $red !important;
+            &:hover {
+                background: white;
+                &::before {
+                    background: rgba($red, 16%) !important;
+                }
+            }
+        }
+        &[color="blue"] {
+            color: $blue !important;
+            &:hover {
+                background: white;
+                &::before {
+                    background: rgba($blue, 16%) !important;
+                }
+            }
+        }
+    }
+    &[color="dark-gray"] {
+        background: rgba(10, 10, 30, .2);
+        &[solid] {
+            background: #202124 !important;
+            &:hover {
+                background: #292a2d !important;
+            }
+        }
+        &:hover {
+            background: rgba(50, 50, 70, .2);
+        }
+        [type="text"],
+        [type="password"] {
+            color: white;
+        }
+        .icon {
+            color: #9aa0a6;
+            background: transparent !important;
+            &:hover {
+                color: white !important;
+                &::before {
+                    background: rgba(255, 255, 255, .1);
+                }
+            }
+            // Colores de iconos
+            &[color="purple"] {
+                color: $purple;
+                &::before {
+                    background: rgba($purple, 20%) !important;
+                }
+                &:hover::before {
+                    background: $purple !important;
+                }
+            }
+            &[color="yellow"] {
+                color: $yellow;
+                &::before {
+                    background: rgba($yellow, 20%) !important;
+                }
+                &:hover::before {
+                    background: $yellow !important;
+                }
+            }
+            &[color="red"] {
+                color: $red;
+                &::before {
+                    background: rgba($red, 20%) !important;
+                }
+                &:hover::before {
+                    background: $red !important;
+                }
+            }
+        }
+    }
+    &[color="white"] {
+        background: rgba(10, 10, 30, .05);
+        &[solid] {
+            background: #f1f3f4 !important;
+            &:hover {
+                background: #e9ebec !important;
+            }
+            &:focus-within {
+                background-color: white !important;
+            }
+        }
+        &:hover {
+            background: rgba(10, 10, 30, .08);
+        }
+        &:focus-within {
+            background: white;
+        }
+        [type="text"],
+        [type="password"] {
+            color: black;
+        }
+        .icon {
+            color: #5f6368;
+            &:hover::before {
+                background: rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+    &[color="default"] {
+        .icon {
+            color: #5f6368;
+            &:hover {
+                background: rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}

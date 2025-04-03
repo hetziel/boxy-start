@@ -1,0 +1,16 @@
+@import '../colors/colors';
+[bc="blue"] {
+    border-color: rgba($blue, 0.5) !important;
+}
+
+[bc="red"] {
+    border-color: rgba($red, 0.5) !important;
+}
+
+[bc="yellow"] {
+    border-color: rgba($yellow, 0.5) !important;
+}
+
+.b-none {
+    border: none;
+}

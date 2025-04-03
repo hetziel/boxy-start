@@ -1,0 +1,146 @@
+//Revision 2024
+@use "btn";
+@use "gate";
+@use "push";
+@use "hover";
+//Revision 2023
+
+@use "icon";
+@use "gradient";
+@use "neon";
+//Only for dash
+@use "complement-focus";
+//Propiedades Propias
+@use "btn_border";
+@use "btn_outline";
+
+//
+a[class^="b-btn"] {
+    display: inline-block;
+    text-decoration: none;
+}
+
+[class^="b-btn"] {
+    -webkit-tap-highlight-color: #0000;
+    user-select: none;
+    text-align: center;
+    padding: .5rem 1rem;
+
+    &:disabled {
+        color: rgb(93, 93, 93) !important;
+        background: rgb(183, 183, 183) !important;
+    }
+
+    &:not([class*='div-']) {
+        min-width: 5rem;
+    }
+
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    flex: 0 0 auto;
+    white-space: nowrap;
+
+    &:not(.b-btn-neon) {
+
+        &[color="default"],
+        &[color="blue"],
+        &[color="gray"],
+        &[color="red"],
+        &[color="green"],
+        &[color="indigo"],
+        &[color="pink"],
+        &[color="dark-pink"],
+        &[color="orange"],
+        &[color="purple"],
+        &[color="turq"],
+        &[color="dark-gray"],
+        &[color="black"] {
+            color: white;
+        }
+    }
+
+    &[size='sm'] {
+        padding: .2rem .8rem;
+        min-width: revert;
+    }
+
+    &[size='lg'] {
+        font-size: 20px;
+        min-width: revert;
+    }
+
+    &[size='xl'] {
+        font-size: 24px;
+        min-width: revert;
+    }
+
+    &[icon] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.2rem;
+        width: 24px;
+        height: 24px;
+        min-width: revert;
+
+        &[size="sm"] {
+            width: 36px;
+            height: 36px;
+        }
+        &[size="md"] {
+            width: 48px;
+            height: 48px;
+        }
+    }
+
+
+    /* Button styles */
+    // & {
+    // display: inline-block;
+    // position: relative;
+    // padding: 12px 24px;
+    // font-size: 16px;
+    // font-weight: bold;
+    // color: #fff;
+    // background-color: #2196f3;
+    // border: none;
+    // border-radius: 4px;
+    // cursor: pointer;
+    // }
+    &[ripple] {
+        overflow: hidden;
+    }
+
+    /* Ripple effect styles */
+    &[ripple] span {
+        position: absolute;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.4);
+        transform: scale(0);
+        animation: ripple 0.5s linear;
+    }
+}
+
+[color="dark"] [class^="b-btn"] {
+
+    &[color="default"],
+    &[color="alternate"] {
+        color: white;
+    }
+}
+
+.b-btn:not([no-efx]),
+.b-btn-push:not([no-efx]) {
+    overflow: hidden;
+}
+
+
+
+/* Ripple effect animation */
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}

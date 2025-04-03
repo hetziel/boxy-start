@@ -1,0 +1,30 @@
+.b-top-header {
+    background: var(--bg);
+    height: var(--top-header-height);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 32 !important;
+    padding: .5rem 0;
+
+
+    &>.b-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // &>a,
+        // &>a * {
+        //     color: var(--color);
+
+        //     &:hover {
+        //         color: var(--color-hover);
+        //     }
+        //     &:active {
+        //         color: var(--color-active);
+        //     }
+        // }
+    }
+}

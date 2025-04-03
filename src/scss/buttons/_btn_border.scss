@@ -1,0 +1,136 @@
+@import '../colors/colors';
+
+//Revision 2023
+.b-btn {
+    --bd: 0 0 0 2px inset;
+
+    &[bordered][color="default"] {
+        box-shadow: var(--bd) $gray !important;
+    }
+
+    &[bordered][color="alternate"] {
+        box-shadow: var(--bd) rgba(0, 0, 0, 0.3) !important;
+    }
+
+    &[bordered][color="green"],
+    &[bordered][color="green"]::before {
+        box-shadow: var(--bd) $green-d2 !important;
+    }
+    &[bordered][color="chartreuse"],
+    &[bordered][color="chartreuse"]::before {
+        box-shadow: var(--bd) $chartreuse-d2 !important;
+    }
+    &[bordered][color="yellow"],
+    &[bordered][color="yellow"]::before {
+        box-shadow: var(--bd) $yellow-d2 !important;
+    }
+    &[bordered][color="orange"],
+    &[bordered][color="orange"]::before {
+        box-shadow: var(--bd) $orange-d2 !important;
+    }
+    &[bordered][color="red"],
+    &[bordered][color="red"]::before {
+        box-shadow: var(--bd) $red-d2 !important;
+    }
+    &[bordered][color="light-blue"],
+    &[bordered][color="light-blue"]::before {
+        box-shadow: var(--bd) $light-blue-d2 !important;
+    }
+    &[bordered][color="aqua"],
+    &[bordered][color="aqua"]::before {
+        box-shadow: var(--bd) $aqua-d2 !important;
+    }
+    &[bordered][color="turq"],
+    &[bordered][color="turq"]::before {
+        box-shadow: var(--bd) $turq-d2 !important;
+    }
+    &[bordered][color="blue"],
+    &[bordered][color="blue"]::before {
+        box-shadow: var(--bd) $blue-d2 !important;
+    }
+    &[bordered][color="indigo"],
+    &[bordered][color="indigo"]::before {
+        box-shadow: var(--bd) $indigo-d2 !important;
+    }
+    &[bordered][color="purple"],
+    &[bordered][color="purple"]::before {
+        box-shadow: var(--bd) $purple-d2 !important;
+    }
+    &[bordered][color="dark-pink"],
+    &[bordered][color="dark-pink"]::before {
+        box-shadow: var(--bd) $dark-pink-d2 !important;
+    }
+    &[bordered][color="pink"],
+    &[bordered][color="pink"]::before {
+        box-shadow: var(--bd) $pink-d2 !important;
+    }
+    &[bordered][color="white"],
+    &[bordered][color="white"]::before {
+        box-shadow: var(--bd) $white-d2 !important;
+    }
+    &[bordered][color="gray"],
+    &[bordered][color="gray"]::before {
+        box-shadow: var(--bd) $gray-d2 !important;
+    }
+    &[bordered][color="dark-gray"],
+    &[bordered][color="dark-gray"]::before {
+        box-shadow: var(--bd) $gray-d2 !important;
+    }
+    &[bordered][color="black"],
+    &[bordered][color="black"]::before {
+        box-shadow: var(--bd) $dark-gray-l2 !important;
+    }
+    &[bordered][color="link"],
+    &[bordered][color="link"]::before {
+        box-shadow: var(--bd) $blue-l1 !important;
+    }
+}
+//Revision 2023
+.b-btn-push {
+    --ol: 2px solid;
+    &[bordered][color="green"] {
+        outline: var(--ol) $green-d2;
+    }
+    &[bordered][color="yellow"] {
+        outline: var(--ol) $yellow-d2;
+    }
+    &[bordered][color="orange"] {
+        outline: var(--ol) $orange-d2;
+    }
+    &[bordered][color="red"] {
+        outline: var(--ol) $red-d2;
+    }
+    &[bordered][color="light-blue"] {
+        outline: var(--ol) $light-blue-d2;
+    }
+    &[bordered][color="aqua"] {
+        outline: var(--ol) $aqua-d2;
+    }
+    &[bordered][color="turq"] {
+        outline: var(--ol) $turq-d2;
+    }
+    &[bordered][color="blue"] {
+        outline: var(--ol) $blue-d2;
+    }
+    &[bordered][color="indigo"] {
+        outline: var(--ol) $indigo-d2;
+    }
+    &[bordered][color="purple"] {
+        outline: var(--ol) $purple-d2;
+    }
+    &[bordered][color="dark-pink"] {
+        outline: var(--ol) $dark-pink-d2;
+    }
+    &[bordered][color="pink"] {
+        outline: var(--ol) $pink-d2;
+    }
+    &[bordered][color="dark-gray"] {
+        outline: var(--ol) $dark-gray-l1;
+    }
+    &[bordered][color="gray"] {
+        outline: var(--ol) $gray-d2;
+    }
+    &[bordered][color="white"] {
+        outline: var(--ol) $white-d2;
+    }
+}

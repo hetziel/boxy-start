@@ -1,0 +1,300 @@
+@import '../colors/colors';
+.b-btn-neon{
+    --bs: 0 .1em 1em 0;
+    --ts: 0px 4px 8px;
+    --bsh: 0 .1em .9em 0;
+    margin: 0 2px 0 2px;
+    border-radius: 20px;
+    border: none;
+    // background: rgba(0, 0, 0, 0.9);
+    background-size: 500% auto;
+    background-blend-mode: multiply;
+    transition: box-shadow ease 2s, background ease 0.2s;
+    &:hover{
+        color:  #000 !important;
+        text-shadow: 0px 4px 10px #000;
+        &:not([gradient]){
+            transition: box-shadow 0.2s ease-out;
+        }
+        &[gradient]{
+            transition: box-shadow 0.2s ease-out,background ease 0.2s;
+        }
+        background-size: 100% auto;
+
+    }
+    &:active{
+        box-shadow: none !important;
+    }
+
+    &[color="green"] {
+        color:  $green;
+        box-shadow: var(--bs) $green;
+        text-shadow: var(--ts) $green;
+        background-image: linear-gradient(45deg,#000,$green);
+        &:hover{
+            &:not([gradient]){
+                background: $green;
+            }
+            &[gradient]{
+                background-image: linear-gradient(325deg, $green-d2 0%, $green-l1 55%, $green-d2 90%);
+            }
+            box-shadow: var(--bsh) $green-l1;
+        }
+    }
+    &[color="chartreuse"] {
+        color:  $chartreuse;
+        box-shadow: var(--bs) $chartreuse;
+        text-shadow: var(--ts) $chartreuse;
+        background-image: linear-gradient(45deg,#000,$chartreuse);
+        &:hover{
+            &:not([gradient]){
+                background: $chartreuse;
+            }
+            &[gradient]{
+                background-image: linear-gradient(325deg, $chartreuse-d2 0%, $chartreuse 55%, $chartreuse-d2 90%);
+            }
+            box-shadow: var(--bsh) $chartreuse;
+        }
+    }
+    &[color="yellow"] {
+        color:  $yellow;
+        box-shadow: var(--bs) $yellow;
+        text-shadow: var(--ts) $yellow;
+        background-image: linear-gradient(45deg,#000,$yellow);
+        &:hover{
+            &:not([gradient]){
+                background: $yellow;
+            }
+            &[gradient]{
+                background-image: linear-gradient(325deg, $yellow-d2 0%, $yellow-l1 55%, $yellow-d2 90%);
+            }
+            box-shadow: var(--bsh) $yellow-l1;
+        }
+    }
+    &[color="orange"] {
+        color:  $orange;
+        box-shadow: var(--bs) $orange;
+        text-shadow: var(--ts) $orange;
+        background-image: linear-gradient(45deg,#000,$orange);
+        &:hover{
+            &:not([gradient]){
+                background: $orange;
+            }
+            &[gradient]{
+                background-image: linear-gradient(325deg, $orange-d2 0%, $orange-l1 55%, $orange-d2 90%);
+            }
+            box-shadow: var(--bsh) $orange-l1;
+        }
+    }
+    &[color="red"] {
+        color:  $red;
+        box-shadow: var(--bs) $red;
+        text-shadow: var(--ts) $red;
+        background-image: linear-gradient(45deg,#000,$red);
+        &:hover{
+            &:not([gradient]){
+                background: $red;
+            }
+            &[gradient]{
+                background-image: linear-gradient(325deg, $red-d2 0%, $red-l1 55%, $red-d2 90%);
+            }
+            box-shadow: var(--bsh) $red;
+        }
+    }
+    &[color="light-blue"] {
+        color:  $light-blue;
+        box-shadow: var(--bs) $light-blue;
+        text-shadow: var(--ts) $light-blue;
+        background-image: linear-gradient(45deg,#000,$light-blue);
+
+        &:hover{
+            &:not([gradient]){
+                background: $light-blue;
+            }
+            &[gradient]{
+                background-image: linear-gradient(325deg, $light-blue-d2 0%, $light-blue-l1 55%, $light-blue-d2 90%);
+            }
+            box-shadow: var(--bsh) $light-blue;
+        }
+    }
+    &[color="aqua"] {
+        color:  $aqua;
+        box-shadow: var(--bs) $aqua;
+        text-shadow: var(--ts) $aqua;
+        background-image: linear-gradient(45deg,#000,$aqua);
+
+        &:hover{
+            &:not([gradient]){
+                background: $aqua;
+            }
+            &[gradient]{
+                background-image: linear-gradient(325deg, $aqua-d2 0%, $aqua-l1 55%, $aqua-d2 90%);
+            }
+            box-shadow: var(--bsh) $aqua;
+        }
+    }
+    &[color="turq"] {
+        color:  $turq;
+        box-shadow: var(--bs) $turq;
+        text-shadow: var(--ts) $turq;
+        background-image: linear-gradient(45deg,#000,$turq);
+        &:hover{
+            &:not([gradient]){
+                background: $turq;
+            }
+            &[gradient]{
+                background-image: linear-gradient(325deg, $turq-d2 0%, $turq-l1 55%, $turq-d2 90%);
+            }
+            box-shadow: var(--bsh) $turq;
+        }
+    }
+    &[color="blue"] {
+        color:  $blue;
+        box-shadow: var(--bs) $blue;
+        text-shadow: var(--ts) $blue;
+        background-image: linear-gradient(45deg,#000,$blue);
+
+        &:hover{
+            &:not([gradient]){
+                background: $blue;
+            }
+            &[gradient]{
+                background-image: linear-gradient(325deg, $blue-d2 0%, $blue-l1 55%, $blue-d2 90%);
+            }
+            box-shadow: var(--bsh) $blue;
+        }
+    }
+    &[color="indigo"] {
+        color:  $indigo;
+        box-shadow: var(--bs) $indigo-l1;
+        text-shadow: var(--ts) $indigo;
+        background-image: linear-gradient(45deg,#000,$indigo);
+        &:hover{
+            &:not([gradient]){
+                background: $indigo;
+            }
+            &[gradient]{
+                background-image: linear-gradient(325deg, $indigo-d2 0%, $indigo-l1 55%, $indigo-d2 90%);
+            }
+            box-shadow: var(--bsh) $indigo-l1;
+        }
+    }
+    &[color="purple"] {
+        color:  $purple;
+        box-shadow: var(--bs) $purple-l1;
+        text-shadow: var(--ts) $purple;
+        background-image: linear-gradient(45deg,#000,$purple);
+
+        &:hover{
+            &:not([gradient]){
+                background: $purple;
+            }
+            &[gradient]{
+                background-image: linear-gradient(325deg, $purple-d2 0%, $purple-l1 55%, $purple-d2 90%);
+            }
+            box-shadow: var(--bsh) $purple-l1;
+        }
+    }
+    &[color="dark-pink"] {
+        color:  $dark-pink;
+        box-shadow: var(--bs) $dark-pink-l1;
+        text-shadow: var(--ts) $dark-pink;
+        background-image: linear-gradient(45deg,#000,$dark-pink);
+        &:hover{
+            &:not([gradient]){
+                background: $dark-pink;
+            }
+            &[gradient]{
+                background-image: linear-gradient(325deg, $dark-pink-d2 0%, $dark-pink-l1 55%, $dark-pink-d2 90%);
+            }
+            box-shadow: var(--bsh) $dark-pink-l1;
+        }
+    }
+    &[color="pink"] {
+        color:  $pink-l1;
+        box-shadow: var(--bs) $pink-l1;
+        text-shadow: var(--ts) $pink-l1;
+        background-image: linear-gradient(45deg,#000,$pink);
+
+        &:hover{
+            &:not([gradient]){
+                background: $pink;
+            }
+            &[gradient]{
+                background-image: linear-gradient(325deg, $pink-d2 0%, $pink-l1 55%, $pink-d2 90%);
+            }
+            box-shadow: var(--bsh) $pink-l1;
+
+        }
+    }
+    &[color="gray"] {
+        color:  $gray;
+        box-shadow: var(--bs) $gray;
+        text-shadow: var(--ts) $gray;
+        background-image: linear-gradient(45deg,#000,$gray);
+
+        &:hover{
+            &:not([gradient]){
+                background: $gray;
+            }
+            &[gradient]{
+                background-image: linear-gradient(325deg, $gray-d2 0%, $gray-l1 55%, $gray-d2 90%);
+            }
+            box-shadow: var(--bsh) $gray;
+
+        }
+    }
+    &[color="dark-gray"] {
+        color:  $gray;
+        box-shadow: var(--bs) $dark-gray;
+        text-shadow: var(--ts) $dark-gray;
+        background-image: linear-gradient(45deg,#000,$dark-gray);
+
+        &:hover{
+            color: white !important;
+            &:not([gradient]){
+                background: $dark-gray;
+            }
+            &[gradient]{
+                background-image: linear-gradient(325deg, $dark-gray-d1 0%, $dark-gray-l2 55%, $dark-gray-d1 90%);
+            }
+            box-shadow: var(--bsh) $dark-gray;
+
+        }
+    }
+    &[color="black"] {
+        background: white;
+        box-shadow: var(--bs) $black;
+        text-shadow: var(--ts) $white;
+        background-image: linear-gradient(45deg,#000,$gray);
+
+        &:hover{
+            color: white !important;
+            &:not([gradient]){
+                background: $black;
+            }
+            &[gradient]{
+                background-image: linear-gradient(325deg, $black 0%, $dark-gray 55%, $black 90%);
+            }
+            box-shadow: var(--bsh) $black;
+
+        }
+    }
+    &[color="white"] {
+        color:  $white;
+        box-shadow: var(--bs) $white;
+        text-shadow: var(--ts) $white;
+        background-image: linear-gradient(45deg,#000,$white);
+
+        &:hover{
+            &:not([gradient]){
+                background: $white;
+            }
+            &[gradient]{
+                background-image: linear-gradient(325deg, $white-d2 0%, $white 55%, $white-d2 90%);
+            }
+            box-shadow: var(--bsh) $white;
+
+        }
+    }
+}

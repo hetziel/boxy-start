@@ -1,0 +1,84 @@
+// Imports
+@import './colors/colors';
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: "Fredoka One";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Fredoka One"), url("../fonts/FredokaOne-Regular.ttf") format("truetype");
+}
+// Variables
+:root {
+    --b-header-height: 60px;
+    --secondary: #6c757d;
+    --bg-img-size-lg: 3840px;
+    //Configuración de b-header
+    --b-header-bg: $dark-gray-l1;
+    --b-header-text: #ffffff;
+    --b-header-text-dark: #000000;
+    //Efectos
+    --b-skin-opacity: 0.4; // 0.2
+    //
+    --side-width: 250px;
+    --color-page-header-bg: #f6f8fa;
+    --color-border-default: #d0d7de;
+    //
+
+    // background-color: #202124;
+    // Mas colores
+    --b-purple: #6800d4;
+    //
+    --b-font-title: "Fredoka One", cursive;
+    --b-font-default: Inter, Montserrat;
+    //
+    //
+    // --success: rgb(2, 195, 154);
+    //  --warning: rgb(255, 190, 11);
+    //
+    // Colores con nombre
+    --b-pink: rgb(255, 224, 230);
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--b-font-default);
+    font-size: 14px;
+}
+
+body {
+    &[img] {
+        // background-image: url(../img/background.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    margin: 0;
+    height: 100vh;
+}
+
+
+
+body {
+    margin: 0;
+    background-color: var(--color-page-header-bg);
+}
+
+hr {
+    border-bottom: 1px solid var(--color-border-default);
+    border-top: 0;
+}

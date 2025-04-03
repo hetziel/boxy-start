@@ -1,0 +1,199 @@
+.b-header {
+    &[mobile] {
+        // & *:is([bx-logo]) {
+        //     margin: 0;
+        // }
+
+        & *:is([bx-fixed]):not([show]) {
+            display: none;
+        }
+
+        [bx-mobile-bar] {
+            display: none;
+        }
+    }
+
+    &>[bx-mobile],
+    &>.b-container [bx-mobile] {
+        color: #fff;
+        padding: 5px;
+        margin-left: auto;
+        font-size: 22px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+// @media (max-width: $sm) {
+//     .b-header[mobile="sm"] {
+//         z-index: 40;
+
+//         &>[bx-logo],
+//         &>.b-container [bx-logo] {
+//             box-shadow: none;
+//             flex: 1;
+
+//         }
+
+//         &>[bx-fixed],
+//         &>.b-container [bx-fixed] {
+//             box-shadow: none;
+//             flex: 0;
+
+//         }
+
+//         &>.b-container [bx-content] {
+//             transform: translateX(-100%);
+//             flex-direction: column;
+//             position: absolute;
+//             // background: white;
+//             height: 100vh;
+//             top: 0;
+//             left: 0;
+//             bottom: 0;
+//             align-items: start;
+//             align-content: start;
+//             max-width: 250px;
+//             width: 100%;
+//             animation-name: example;
+//             animation-duration: 0.2s;
+//             transition: 0.2s;
+//             overflow: auto;
+//             z-index: 2;
+//             padding: .5rem;
+
+//             &>[class*="b-btn"] {
+//                 width: 100%;
+//                 margin-bottom: 5px;
+//             }
+
+//             &[opened] {
+//                 transform: translateX(0);
+//                 box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.24);
+//             }
+
+//             &>[bx-mobile-bar] {
+//                 display: block;
+//                 color: inherit;
+//                 width: 100%;
+//             }
+//         }
+
+//         &>[bx-mobile],
+//         &>.b-container [bx-mobile] {
+//             display: flex;
+//         }
+
+//         // &>[dark]{
+//         //     background-color: rgba(0, 0, 0, 0.5);
+//         // }
+//     }
+// }
+
+@media (max-width: $md) {
+    .b-header[mobile="md"] {
+        z-index: 40;
+
+        &[only-content]>.b-container {
+            &>[bx-logo] {
+                display: flex;
+            }
+
+            &>[bx-content]>[bx-logo] {
+                display: none;
+            }
+        }
+
+        &>.b-container {
+            [bx-logo] {
+                flex: 1;
+            }
+
+            [bx-fixed] {
+                flex: 0;
+            }
+        }
+
+        &>.b-container [bx-content] {
+            --header-height: 0;
+            transform: translateX(-100%);
+            flex-direction: column;
+            position: absolute;
+            background: var(--menu-bg);
+            height: calc(100vh - var(--top-header-height));
+            top: 100%;
+            left: 0;
+            bottom: 0;
+            align-items: start;
+            align-content: start;
+            max-width: 250px;
+            width: 100%;
+            animation-name: example;
+            animation-duration: 0.2s;
+            transition: 0.2s;
+            overflow: auto;
+            z-index: 2;
+            padding: .5rem;
+
+            &>[class*="b-btn"] {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+
+            &[opened] {
+                transform: translateX(0);
+                box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.24);
+            }
+
+            &>[bx-mobile-bar] {
+                display: block;
+                color: inherit;
+                width: 100%;
+            }
+        }
+
+        &>[bx-mobile],
+        &>.b-container [bx-mobile] {
+            display: flex;
+        }
+
+        // &>[dark]{
+        //     background-color: rgba(0, 0, 0, 0.5);
+        // }
+    }
+}
+
+// @media (min-width: $sm) {
+//     .b-header[mobile="sm"] {
+//         [bx-fixed] {
+//             display: inherit !important;
+//         }
+//     }
+// }
+
+@media (min-width: $md) {
+    .b-header[mobile="md"] {
+        // [bx-fixed] {
+        //     display: inherit !important;
+        // }
+
+        &[only-content]>.b-container {
+
+            &>[bx-content] {
+                justify-content: center;
+            }
+        }
+    }
+
+}
+
+// @keyframes example {
+//     from {
+//         transform: translateX(-100%);
+//     }
+
+//     to {
+//         transform: translateX(-100%)
+//     }
+// }

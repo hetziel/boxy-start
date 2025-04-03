@@ -1,0 +1,64 @@
+.b-btn-icon {
+    --default: rgba(0, 0, 0, .3);
+    --hover: rgba(0, 0, 0, .5);
+    --active: rgba(0, 0, 0, .7);
+    --bx-text-hover: var(--bx-text);
+    --bx-text-active: var(--bx-text);
+    --bx-size: 32px;
+    --bx-text-size: 12px;
+    --bx-rotate-timing: .5s;
+
+    color: var(--bx-text);
+    font-size: var(--bx-text-size);
+    width: var(--bx-size);
+    height: var(--bx-size);
+    background: var(--default);
+    padding: 0 !important;
+    min-width: unset !important;
+    border-radius: 50%;
+    border: none;
+    cursor: default;
+    outline: none;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background: var(--hover);
+        color: white;
+    }
+
+    &[zoom] {
+        &:hover {
+            &>* {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    &[rotate] {
+        &>* {
+            transition: transform var(--bx-rotate-timing);
+        }
+
+        &:hover {
+            &>* {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &:active {
+        background: var(--active);
+    }
+
+    &[size="sm"] {
+        width: 24px;
+        height: 24px;
+    }
+
+    &[child-icon] * {
+        color: var(--bx-text);
+    }
+}

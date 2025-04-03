@@ -1,0 +1,45 @@
+.b-header[dropdown] {
+
+    &>[bx-container]>[bx-content],
+    &>[bx-content] {
+
+        &[opened] {
+            display: inherit;
+        }
+    }
+
+    & .b-nav {
+        align-items: center;
+        flex-wrap: nowrap;
+
+        & a,
+        & button {
+            flex: 1 0 auto;
+        }
+    }
+}
+
+@media (max-width: $md) {
+    .b-header[dropdown] {
+
+        &>[bx-container]>[bx-mobile],
+        &>[bx-mobile] {
+            display: inherit;
+        }
+
+        &>[bx-container]>[bx-content],
+        &>[bx-content] {
+            display: none;
+            padding: 0.5rem;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: auto;
+
+            .b-nav {
+                display: block;
+                padding: 0;
+            }
+        }
+    }
+}

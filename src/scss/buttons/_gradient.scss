@@ -1,0 +1,89 @@
+@import '../colors/colors';
+.b-btn-gradient {
+    transition: 0.8s;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-size: 280% auto;
+    &:hover {
+        background-position: right top;
+    }
+    &:is(:focus, :focus-within, :active) {
+        box-shadow: 0 0 0 3px white, 0 0 0 6px $blue;
+    }
+    @media (prefers-reduced-motion: reduce) {
+        & {
+            transition: linear;
+        }
+    }
+    //Propiedades Color
+    &[color="green"] {
+        background-image: linear-gradient(325deg, $green 0%, $green-l1 55%, $green 90%);
+        box-shadow: 0px 0px 20px rgba($green-l1, 0.5), 0px 5px 5px -1px rgba($green, 0.25), inset 4px 4px 8px rgba($green-l1, 0.25), inset -4px -4px 8px rgba($green, 0.35);
+    }
+    &[color="chartreuse"] {
+        background-image: linear-gradient(325deg, $chartreuse 0%, $chartreuse 55%, $chartreuse-d2 90%);
+        box-shadow: 0px 0px 20px rgba($chartreuse, 0.5), 0px 5px 5px -1px rgba($chartreuse-d1, 0.25), inset 4px 4px 8px rgba($chartreuse, 0.25), inset -4px -4px 8px rgba($chartreuse-d2, 0.35);
+    }
+    &[color="yellow"] {
+        background-image: linear-gradient(325deg, $yellow-d2 0%, $yellow 55%, $yellow-d2 90%);
+        box-shadow: 0px 0px 20px rgba($yellow, 0.5), 0px 5px 5px -1px rgba($yellow-d2, 0.25), inset 4px 4px 8px rgba($yellow, 0.25), inset -4px -4px 8px rgba($yellow-d2, 0.35);
+    }
+    &[color="orange"] {
+        background-image: linear-gradient(325deg, $orange-d2 0%, $orange 55%, $orange-d2 90%);
+        box-shadow: 0px 0px 20px rgba($orange, 0.5), 0px 5px 5px -1px rgba($orange-d2, 0.25), inset 4px 4px 8px rgba($orange, 0.25), inset -4px -4px 8px rgba($orange-d2, 0.35);
+    }
+    &[color="red"] {
+        background-image: linear-gradient(325deg, $red-d2 0%, $red-l1 55%, $red-d2 90%);
+        box-shadow: 0px 0px 20px rgba($red-l1, 0.5), 0px 5px 5px -1px rgba($red-d2, 0.25), inset 4px 4px 8px rgba($red-l1, 0.25), inset -4px -4px 8px rgba($red-d2, 0.35);
+    }
+    &[color="light-blue"] {
+        background-image: linear-gradient(325deg, $light-blue-l1 0%, $light-blue 55%, $light-blue-d2 90%);
+        box-shadow: 0px 0px 20px rgba($light-blue, 0.5), 0px 5px 5px -1px rgba($light-blue-d2, 0.25), inset 4px 4px 8px rgba($light-blue-d2, 0.15), inset -4px -4px 8px rgba($light-blue-d2, 0.35);
+    }
+    &[color="aqua"] {
+        background-image: linear-gradient(325deg, $aqua-l1 0%, $aqua-l1 55%, $aqua-d2 90%);
+        box-shadow: 0px 0px 20px rgba($aqua, 0.5), 0px 5px 5px -1px rgba($aqua-d2, 0.25), inset 4px 4px 8px rgba($aqua-d2, 0.15), inset -4px -4px 8px rgba($aqua-d2, 0.35);
+    }
+    &[color="turq"] {
+        background-image: linear-gradient(325deg, $turq-l1 0%, $turq-l1 55%, $turq-d2 90%);
+        box-shadow: 0px 0px 20px rgba($turq, 0.5), 0px 5px 5px -1px rgba($turq-d2, 0.25), inset 4px 4px 8px rgba($turq-d2, 0.15), inset -4px -4px 8px rgba($turq-d2, 0.35);
+    }
+    &[color="blue"] {
+        background-image: linear-gradient(325deg, $blue 0%, $blue-l1 55%, $blue 90%);
+        box-shadow: 0px 0px 20px rgba($blue-l1, 0.5), 0px 5px 5px -1px rgba($blue, 0.25), inset 4px 4px 8px rgba($blue-l1, 0.25), inset -4px -4px 8px rgba($blue, 0.35);
+    }
+    &[color="indigo"] {
+        background-image: linear-gradient(325deg, $indigo-l1 0%, $indigo-l1 55%, $indigo-d2 90%);
+        box-shadow: 0px 0px 20px rgba($indigo, 0.5), 0px 5px 5px -1px rgba($indigo-d2, 0.25), inset 4px 4px 8px rgba($indigo-d2, 0.15), inset -4px -4px 8px rgba($indigo-d2, 0.35);
+    }
+    &[color="purple"] {
+        background-image: linear-gradient(325deg, $purple-l1 0%, $purple-l1 55%, $purple-d2 90%);
+        box-shadow: 0px 0px 20px rgba($purple, 0.5), 0px 5px 5px -1px rgba($purple-d2, 0.25), inset 4px 4px 8px rgba($purple-d2, 0.15), inset -4px -4px 8px rgba($purple-d2, 0.35);
+    }
+    &[color="dark-pink"] {
+        background-image: linear-gradient(325deg, $dark-pink-l1 0%, $dark-pink-l1 55%, $dark-pink-d2 90%);
+        box-shadow: 0px 0px 20px rgba($dark-pink, 0.5), 0px 5px 5px -1px rgba($dark-pink-d2, 0.25), inset 4px 4px 8px rgba($dark-pink-d2, 0.15), inset -4px -4px 8px rgba($dark-pink-d2, 0.35);
+    }
+    &[color="pink"] {
+        background-image: linear-gradient(325deg, $pink-l1 0%, $pink-l1 55%, $pink-d2 90%);
+        box-shadow: 0px 0px 20px rgba($pink, 0.5), 0px 5px 5px -1px rgba($pink-d2, 0.25), inset 4px 4px 8px rgba($pink-d2, 0.15), inset -4px -4px 8px rgba($pink-d2, 0.35);
+    }
+    &[color="white"] {
+        background-image: linear-gradient(325deg, $white 0%, $white-d2 55%, $white 90%);
+        box-shadow: 0px 0px 20px rgba($white, 0.5), 0px 5px 5px -1px rgba($white-d2, 0.25), inset 4px 4px 8px rgba($white-d2, 0.15), inset -4px -4px 8px rgba($white-d2, 0.15);
+    }
+    
+    &[color="gray"] {
+        background-image: linear-gradient(325deg, $gray 0%, $gray-l1 55%, $gray 90%);
+        box-shadow: 0px 0px 20px rgba($gray-l1, 0.5), 0px 5px 5px -1px rgba($gray, 0.25), inset 4px 4px 8px rgba($gray-l1, 0.25), inset -4px -4px 8px rgba($gray, 0.35);
+    }
+    &[color="dark-gray"] {
+        background-image: linear-gradient(325deg, $dark-gray 0%, $dark-gray-l1 55%, $dark-gray 90%);
+        box-shadow: 0px 0px 20px rgba($dark-gray, 0.5), 0px 5px 5px -1px rgba($dark-gray-l1, 0.25), inset 4px 4px 8px rgba($dark-gray-l1, 0.25), inset -4px -4px 8px rgba($dark-gray-l1, 0.35);
+    }
+    &[color="black"] {
+        background-image: linear-gradient(325deg, $black 0%, $black-l1 55%, $black 90%);
+        box-shadow: 0px 0px 20px rgba($black, 0.5), 0px 5px 5px -1px rgba($black-l1, 0.25), inset 4px 4px 8px rgba($black-l1, 0.25), inset -4px -4px 8px rgba($black-l1, 0.35);
+    }
+}

@@ -1,0 +1,143 @@
+@import '../colors/colors';
+
+[bg]{
+    --bg: 1;
+    &[bg*="1"]{
+        --bg: .9;
+    }
+    &[bg*="2"]{
+        --bg: .8;
+    }
+    &[bg*="3"]{
+        --bg: .7;
+    }
+    &[bg*="4"]{
+        --bg: .6;
+    }
+    &[bg*="5"]{
+        --bg: .5;
+    }
+    &[bg*="6"]{
+        --bg: .4;
+    }
+    &[bg*="7"]{
+        --bg: .3;
+    }
+    &[bg*="8"]{
+        --bg: .2;
+    }
+    &[bg*="9"]{
+        --bg: .1;
+    }
+    &[bg*="10"]{
+        --bg: .05;
+    }
+}
+
+// [bg*="dark-gray"] {
+//     background: rgba($dark-gray, var(--bg));
+// }
+
+[bg^="green"] {
+    background: rgba($green, var(--bg));
+}
+[bg^="chartreuse"] {
+    background: rgba($chartreuse, var(--bg));
+}
+[bg^="yellow"] {
+    background: rgba($yellow, var(--bg));
+}
+[bg^="orange"] {
+    background: rgba($orange, var(--bg));
+}
+[bg^="red"] {
+    background: rgba($red, var(--bg));
+}
+[bg^="light-blue"] {
+    background: rgba($light-blue, var(--bg));
+}
+[bg^="aqua"] {
+    background: rgba($aqua, var(--bg));
+}
+[bg^="turq"] {
+    background: rgba($turq, var(--bg));
+}
+[bg^="blue"] {
+    background: rgba($blue, var(--bg));
+}
+[bg^="indigo"] {
+    background: rgba($indigo, var(--bg));
+}
+[bg^="purple"] {
+    background: rgba($purple, var(--bg));
+}
+[bg^="dark-pink"] {
+    background: rgba($dark-pink, var(--bg));
+}
+[bg^="pink"] {
+    background: rgba($pink, var(--bg));
+}
+[bg^="dark-gray"] {
+    background: rgba($dark-gray, var(--bg));
+}
+[bg^="dark-bgray"] {
+    background: rgba($dark-bgray, var(--bg));
+}
+[bg^="gray"] {
+    background: rgba($gray, var(--bg));
+}
+[bg^="white"] {
+    background: rgba($white, var(--bg));
+}
+[bg^="black"] {
+    background: rgba($black, var(--bg));
+}
+
+//Extras
+[bg="dark-2"] {
+    background-color: $dark-gray-l1;
+}
+
+[bg="dark-3"] {
+    background-color: $dark-gray-d1;
+}
+
+[bg="danger-2"] {
+    background-color: $dark-gray-l1;
+}
+
+.b-header[gradient] {
+    background-size: 280% auto;
+    &[bg="blue"] {
+        background-image: linear-gradient(325deg, $blue 0%, $blue-l1 55%, $blue 90%);
+        box-shadow: 0px 0px 20px rgba(var(--b-primary-light-x), 0.5), 0px 5px 5px -1px rgba($blue, 0.25), inset 4px 4px 8px rgba(var(--b-primary-light-x), 0.25), inset -4px -4px 8px rgba($blue, 0.35);
+    }
+    &[bg="gray"] {
+        background-image: linear-gradient(325deg, $gray 0%, $gray-l1 55%, $gray 90%);
+        box-shadow: 0px 0px 20px rgba($gray-l1, 0.5), 0px 5px 5px -1px rgba($gray, 0.25), inset 4px 4px 8px rgba($gray-l1, 0.25), inset -4px -4px 8px rgba($gray, 0.35);
+    }
+    &[bg="green"] {
+        background-image: linear-gradient(325deg, $green 0%, $green-l1 55%, $green 90%);
+        box-shadow: 0px 0px 20px rgba($green-l1, 0.5), 0px 5px 5px -1px rgba($green, 0.25), inset 4px 4px 8px rgba($green-l1, 0.25), inset -4px -4px 8px rgba($green, 0.35);
+    }
+    &[bg="red"] {
+        background-image: linear-gradient(325deg, $red-d2 0%, $red-l1 55%, $red-d2 90%);
+        box-shadow: 0px 0px 20px rgba($red-l1, 0.5), 0px 5px 5px -1px rgba($red-d2, 0.25), inset 4px 4px 8px rgba($red-l1, 0.25), inset -4px -4px 8px rgba($red-d2, 0.35);
+    }
+    &[bg="yellow"] {
+        background-image: linear-gradient(325deg, $yellow-d2 0%, $yellow 55%, $yellow-d2 90%);
+        box-shadow: 0px 0px 20px rgba($yellow, 0.5), 0px 5px 5px -1px rgba($yellow-d2, 0.25), inset 4px 4px 8px rgba($yellow, 0.25), inset -4px -4px 8px rgba($yellow-d2, 0.35);
+    }
+    &[bg="light-blue"] {
+        background-image: linear-gradient(325deg, $light-blue-l1 0%, $light-blue 55%, $light-blue-l1 90%);
+        box-shadow: 0px 0px 20px rgba($light-blue, 0.5), 0px 5px 5px -1px rgba($light-blue-d2, 0.25), inset 4px 4px 8px rgba($light-blue-d2, 0.15), inset -4px -4px 8px rgba($light-blue-d2, 0.35);
+    }
+    &[bg="white"] {
+        background-image: linear-gradient(325deg, $white 0%, $white-d2 55%, $white 90%);
+        box-shadow: 0px 0px 20px rgba($white, 0.5), 0px 5px 5px -1px rgba($white-d2, 0.25), inset 4px 4px 8px rgba($white-d2, 0.15), inset -4px -4px 8px rgba($white-d2, 0.15);
+    }
+    &[bg="dark-gray"] {
+        background-image: linear-gradient(325deg, $dark-gray 0%, $dark-gray-l1 55%, $dark-gray 90%);
+        box-shadow: 0px 0px 20px rgba($dark-gray, 0.5), 0px 5px 5px -1px rgba($dark-gray-l1, 0.25), inset 4px 4px 8px rgba($dark-gray-l1, 0.25), inset -4px -4px 8px rgba($dark-gray-l1, 0.35);
+    }
+}

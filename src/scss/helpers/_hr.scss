@@ -1,0 +1,10 @@
+.b-line {
+    --color: #000;
+    border: 0;
+    border-left: 2px solid var(--color);
+    margin: 0 1rem;
+
+    &[v] {
+        height: 2rem;
+    }
+}

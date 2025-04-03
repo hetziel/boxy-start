@@ -1,0 +1,78 @@
+@import "../grid/variables";
+
+.b-top-header+.b-header {
+    top: var(--top-header-height);
+}
+
+.b-header {
+    --height: 60px;
+    z-index: 32 !important;
+    font-size: 14px;
+    width: 100%;
+    height: var(--header-height);
+    flex: 1 0 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+
+    &[only-content]>.b-container {
+        flex: 1 0;
+
+        &>[bx-logo] {
+            display: none;
+        }
+
+        &>[bx-content] {
+            width: 100%;
+            align-items: center;
+        }
+    }
+
+    &>.b-container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex: 1 0 auto;
+        padding: 0.5rem 0;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        &>[bx-content],
+        &>[bx-fixed] {
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+        }
+
+        &>[bx-content] {
+            align-items: start;
+        }
+
+        &>[bx-logo]+[bx-content] {
+            margin-left: auto;
+        }
+
+        & [bx-logo] {
+            height: 100%;
+            color: var(--logo-color);
+
+            img,
+            a {
+                height: 100%;
+                max-height: 100%;
+                max-width: 130px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+@media (max-width: $md) {
+    .b-header .b-container hr {
+        display: none;
+    }
+}
+
+// @import "dropdown";
+@import "mobile";

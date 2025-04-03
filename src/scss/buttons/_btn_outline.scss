@@ -1,0 +1,21 @@
+@import '../colors/colors';
+[class^="b-btn"] {
+    &[outline] {
+        //success
+        &[color="turq"] {
+            box-shadow: 0 0 0 1px inset $turq;
+            background: transparent;
+        }
+        &[color="success"] {
+            color: $green-d2;
+        }
+        //warning
+        &[color="warning"]::before {
+            box-shadow: 0 0 0 1px inset orange;
+            background: transparent;
+        }
+        &[color="warning"] {
+            color: orange;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.b-btn-hover {
+    --bx-default: rgba(0, 0, 0, .1);
+    --bx-hover: rgba(0, 0, 0, .5);
+    --bx-active: rgba(0, 0, 0, .7);
+    --bx-shadow: rgba(0, 0, 0, .3);
+    --bx-bg-timing: .2s;
+    --bx-text-hover: var(--bx-text);
+    --bx-text-active: var(--bx-text);
+    
+    margin: 0;
+    border: none;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 13px 20px;
+    border-radius: 4px;
+    transition: box-shadow 0.1s, top 0.1s, background var(--bx-bg-timing);
+    box-shadow: 0 3px 0 var(--bx-shadow);
+    top: 0;
+    background: var(--bx-default);
+    color: var(--bx-text);
+
+    &:hover {
+        background: var(--bx-hover);
+        color: var(--bx-text-hover);
+        box-shadow: 0 3px 0 transparent;
+
+        top: 3px;
+    }
+
+    &:active {
+        background: var(--bx-active);
+        color: var(--bx-text-active);
+    }
+}

@@ -1,0 +1,35 @@
+.app-title {
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+    position: relative;
+
+    h2 {
+        font-size: 32px;
+        font-family: var(--app-font-title);
+    }
+
+    p {
+        font-size: 16px;
+        margin-bottom: .4rem;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        background: var(--app-primary);
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 100%;
+    }
+
+    &[left] {
+        text-align: left;
+        align-items: start;
+    }
+}

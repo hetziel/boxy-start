@@ -1,0 +1,24 @@
+.shadow-up,
+[shadow="up"] {
+    box-shadow: 0 -2px 5px rgb(0 0 0 / 10%);
+}
+
+.shadow-bottom,
+[shadow="bottom"] {
+    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+}
+
+.shadow-end,
+[shadow="end"] {
+    box-shadow: 2 0 5px rgb(0 0 0 / 10%);
+}
+
+.shadow-start,
+[shadow="start"] {
+    box-shadow: -2 0 5px rgb(0 0 0 / 10%);
+}
+
+.shadow-all,
+[shadow="all"] {
+    box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+}

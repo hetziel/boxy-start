@@ -1,0 +1,11 @@
+[bg-img] {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    &[fixed] {
+        background-attachment: fixed;
+    }
+    &[contain] {
+        background-size: contain !important;
+    }
+}

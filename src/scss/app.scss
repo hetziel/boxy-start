@@ -1,0 +1,43 @@
+[docs-grid]{
+    &>div{
+        height: 2rem;
+        border: 1px solid rgba(0, 0, 255, 0.3);
+        background: rgba(8, 0, 255, 0.05);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+[docs-bg-img-main]{
+    border: 1px solid rgba(0, 0, 255, 0.3);
+}
+[docs-bg-img]{
+    display: flex;
+        flex-wrap: wrap;
+    &> div{
+        width: 200px;
+        height: 100px;
+        padding: 5px;
+        font-weight: bold;
+        font-size: 12px;
+    border: 1px solid rgba(0, 0, 255, 0.3);
+
+    }
+    &> span{
+        background: white;
+        border-radius: 5px;
+        padding: 2px;
+    }
+}
+
+.colors-dev div{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.colors-dev{
+    display: flex;
+    flex-wrap: wrap;
+}

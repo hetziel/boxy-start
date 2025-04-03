@@ -1,0 +1,25 @@
+@import '../colors/colors';
+
+.b-form-area {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: -webkit-fill-available;
+
+    label {
+        width: auto;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0.2rem 0;
+
+        &>* {
+            width: 100%;
+        }
+    }
+
+    label:has(*) {
+        margin: 0.2rem 0;
+        &>input,&>select{
+            margin: 0.2rem 0 0 0;
+        }
+    }
+}

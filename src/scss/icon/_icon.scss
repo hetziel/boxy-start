@@ -1,0 +1,32 @@
+
+b-icon {
+    cursor: default;
+    color: #9aa0a6;
+    position: relative;
+    border-radius: 24px;
+    min-width: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    &:first-child {
+        padding: 0 10px;
+        &::after {
+            content: "";
+            width: 1px;
+            height: 80%;
+            display: block;
+            position: absolute;
+            background-color: #9aa0a6;
+            margin-left: 40px;
+            right: 0;
+            transition: background 0.5s;
+        }
+    }
+    &:hover {
+        background-color: #363739;
+        &::after {
+            background: transparent;
+        }
+    }
+}

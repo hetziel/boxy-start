@@ -1,0 +1,112 @@
+@import '../colors/colors';
+@import "../grid/variables";
+
+.b-nav a,
+.b-nav button,
+.b-link {
+    display: block;
+    color: $blue;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &[classic] {
+        text-decoration: underline;
+    }
+
+    &[skin="btn"] {
+        padding: .5rem 1rem;
+    }
+}
+
+[dark] {
+    .b-link {
+        color: #fff;
+    }
+}
+
+.b-nav {
+    width: 100%;
+    display: flex;
+    overflow: overlay;
+
+    padding: 0 1rem;
+    margin-right: 0;
+    flex-wrap: wrap;
+
+    align-content: start;
+    flex: 1 0 100%;
+
+    & a,
+    & button {
+        flex: 1 0 100%;
+        transition: .3s;
+    }
+
+
+    &[dark] a,
+    &[dark] button {
+        color: #fff;
+    }
+
+    &[skin="btn"] a,
+    &[skin="btn"] button {
+        padding: .5rem 1rem;
+    }
+
+    &[bg-hover="turq"] a:hover {
+        color: $turq;
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+
+.b-nav[row] {
+    align-items: center;
+    flex-wrap: nowrap;
+
+    & a,
+    & button {
+        flex: 1 0 auto;
+    }
+}
+
+@media (min-width: $xs) {
+
+    .b-header[mobile="xs"] .b-nav,
+    .b-nav[vertical="xs"] {
+        align-items: center;
+        flex-wrap: nowrap;
+
+        & a,
+        & button {
+            flex: 1 0 auto;
+        }
+    }
+}
+
+@media (min-width: $sm) {
+
+    .b-header[mobile="sm"].b-nav,
+    .b-nav[vertical="sm"] {
+        align-items: center;
+        flex-wrap: nowrap;
+
+        & a,
+        & button {
+            flex: 1 0 auto;
+        }
+    }
+}
+
+@media (min-width: $md) {
+
+    .b-header[mobile="md"] .b-nav,
+    .b-nav[vertical="md"] {
+        align-items: center;
+        flex-wrap: nowrap;
+
+        & a,
+        & button {
+            flex: 1 0 auto;
+        }
+    }
+}

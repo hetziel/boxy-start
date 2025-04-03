@@ -1,0 +1,48 @@
+@import "../grid/variables";
+
+.b-list {
+    display: inline-block;
+    font-size: var(--font-size);
+
+    a {
+        color: var(--color);
+
+        &:hover {
+            text-decoration: none;
+            color: var(--color-hover);
+        }
+
+        &:active {
+            color: var(--color-active);
+        }
+    }
+
+    ul {
+        padding-left: 20px;
+        color: var(--color-list);
+
+        &:has(li [bx-icon]) {
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: var(--list-space);
+        }
+
+    }
+}
+
+@media (max-width: $md) {
+    .b-list[hi] {
+        ul {
+            list-style: none;
+            padding: 0;
+
+            [bx-icon] {
+                display: none;
+            }
+        }
+    }
+
+}

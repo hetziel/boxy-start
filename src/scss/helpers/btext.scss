@@ -1,0 +1,14 @@
+.b-text{
+    transition: .2s color;
+    color: var(--color);
+    font-size: var(--font-size);
+   
+    &:hover {
+        color: var(--color-hover);
+        text-decoration: none;
+    }
+
+    &:active {
+        color: var(--color-active);
+    }
+}

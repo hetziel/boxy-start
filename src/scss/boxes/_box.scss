@@ -1,0 +1,42 @@
+.b-box {
+    //new
+    [bx-head] {
+        margin: 0;
+        padding: 0.5em 1em;
+        border-bottom: 1px solid var(--color-border-default);
+    }
+    [bx-content] {
+        margin: 0;
+        padding: 0.5em;
+    }
+
+    //old
+
+    >* {
+        margin: 0.5em;
+    }
+    >span {
+        display: inline-block;
+    }
+    margin-right: 0;
+    margin-left: 0;
+    border: 1px solid var(--color-border-default);
+    border-radius: 6px;
+    overflow: hidden;
+
+    &[color="white"] {
+        background: white;
+    }
+    &[bg="dark"] {
+        &>* {
+            color: white;
+        }
+    }
+    &:not(.b-box-content) {
+        padding: 5px;
+    }
+
+    &[shadow] {
+        box-shadow: 0 6px 20px -15px #000;
+      }
+}

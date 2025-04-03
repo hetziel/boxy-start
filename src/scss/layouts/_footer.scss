@@ -1,0 +1,11 @@
+.b-footer {
+    background: var(--bg);
+    padding: 2rem 0;
+
+    &>[bx-container] {}
+
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
+}

@@ -1,0 +1,61 @@
+@import 'font-size';
+
+[class^="tt"],
+[class^="st"] {
+    font-weight: bold;
+    display: block;
+    &.main {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+}
+
+// Subtitle
+.st-xs {
+    font-size: 12px;
+}
+
+.st-sm {
+    font-size: 14px;
+}
+
+.st-md {
+    font-size: 16px;
+}
+
+.st-lg {
+    font-size: 18px;
+}
+
+.st-xl {
+    font-size: 20px;
+}
+
+.st-xxl {
+    font-size: 24px;
+}
+
+// title
+.tt-xs {
+    font-size: 16px;
+}
+
+.tt-sm {
+    font-size: 18px;
+}
+
+.tt-md {
+    font-size: 20px;
+}
+
+.tt-lg {
+    font-size: 24px;
+}
+
+.tt-xl {
+    font-size: 26px;
+}
+
+.tt-xxl {
+    font-size: 28px;
+}

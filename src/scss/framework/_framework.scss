@@ -1,0 +1,95 @@
+@import '../colors/colors';
+
+
+span {
+    display: inline-block;
+}
+
+boxy {
+    display: none;
+}
+
+body::before {
+    position: fixed;
+    bottom: 0;
+    padding: 2px;
+    color: white;
+    z-index: 100;
+    font-family: var(--b-font-default);
+    pointer-events: none;
+    font-size: 10px;
+    border: 1px solid rgba($black, 0.4);
+    border-bottom: 0;
+}
+
+
+// // Muestra la versión de Boxy
+// body[version]::before {
+//     content: "Boxy Beta: " attr(version);
+//     right: 0;
+//     background: rgba($black, 0.5);
+//     margin: 0 0 0 5px;
+//     border-radius: 5px 5px 0 0;
+
+//     &:hover {
+//         display: none;
+//     }
+// }
+
+// body::before {
+//     content: "Boxy Beta: (Para mejorar algunas funciones, instala el JavaScript)";
+//     right: 0;
+//     background: rgba($black, 0.5);
+//     margin: 0 0 0 5px;
+//     border-radius: 5px 5px 0 0;
+
+//     &:hover {
+//         display: none;
+//     }
+// }
+
+//Mejora los trozos de códigos
+[code] {
+    * {
+        font-family: monospace !important;
+        font-size: 12px;
+    }
+
+    font-family: monospace !important;
+    font-size: 12px;
+    display: inline-block;
+    background: #051e3b;
+    padding: 5px;
+    color: rgb(216, 216, 216);
+    min-width: 100%;
+    line-height: normal;
+    position: relative;
+    width: 100%;
+    &>pre{
+        margin: 0;
+        overflow: auto;
+    }
+
+    &[short]{
+        display: inline;
+        border-radius: 5px;
+        padding: 2px 5px;
+    }
+}
+
+
+.no-scroll {
+    overflow: hidden;
+}
+
+
+
+.copy-icon{
+    display: block;
+    filter: invert(1);
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 5px;
+    right: 5px;
+}

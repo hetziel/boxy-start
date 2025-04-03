@@ -1,0 +1,22 @@
+.b-btn {
+    --bx-default: rgba(0, 0, 0, .3);
+    --bx-hover: rgba(0, 0, 0, .5);
+    --bx-active: rgba(0, 0, 0, .7);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    transition: background 0.4s, box-shadow 0.1s;
+    background-color: var(--bx-default);
+    color: var(--bx-text);
+}
+
+.b-btn:hover {
+    background-color: var(--bx-hover);
+    color: var(--bx-text-hover);
+
+}
+
+.b-btn:active {
+    background-color: var(--bx-active);
+    color: var(--bx-text-active);
+}

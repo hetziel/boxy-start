@@ -1,0 +1,73 @@
+@import "../grid/variables";
+
+.b-container {
+    &:not(.-alt) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    &.-alt {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    flex: 1;
+
+    &.-md {
+        max-width: $md;
+    }
+
+    &.-lg {
+        max-width: $lg;
+    }
+
+    &.-xl {
+        max-width: $xl;
+    }
+}
+
+@media (min-width: $xl) {
+    .b-container:not(.-alt) {
+        &.-xl {
+            margin-left: .4rem;
+            margin-right: .4rem;
+        }
+    }
+    .b-container.-alt {
+        &.-xl {
+            padding-left: .4rem;
+            padding-right: .4rem;
+        }
+    }
+}
+
+@media (min-width: $md) {
+    .b-container:not(.-alt) {
+        &.-extend {
+            max-width: 100%;
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+    }
+    .b-container.-alt {
+        &.-extend {
+            max-width: 100%;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+}
+
+@media (min-width: $lg) {
+    .b-container:not(.-alt) {
+        &.-extend {
+            margin-left: 4.5rem;
+            margin-right: 4.5rem;
+        }
+    }
+    .b-container.-alt {
+        &.-extend {
+            padding-left: 4.5rem;
+            padding-right: 4.5rem;
+        }
+    }
+}

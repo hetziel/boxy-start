@@ -1,0 +1,460 @@
+@import "../colors/colors";
+// Revision 2023 //
+
+.b-btn,
+.b-btn-push {
+  &[color="default"] {
+    background: rgba(255, 255, 255, 0.1);
+    &::before {
+      background: transparent;
+    }
+    &:not([no-efx]):active {
+      background: rgba(255, 255, 255, 0.3);
+    }
+    &:not([no-efx]):hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+  &[color="alternate"] {
+    background: rgba(0, 0, 0, 0.1);
+    &::before {
+      background: transparent;
+    }
+    &:not([no-efx]):hover {
+      background: rgba(0, 0, 0, 0.2);
+    }
+    &:not([no-efx]):active {
+      background: rgba(0, 0, 0, 0.3);
+    }
+  }
+  &[color="green"] {
+    background: $green;
+    &:not([no-efx]):hover {
+      background: $green-d1;
+    }
+    &:not([no-efx]):active {
+      background: $green-d2;
+    }
+  }
+  &[color="chartreuse"] {
+    background: $chartreuse;
+    &:not([no-efx]):hover {
+      background: $chartreuse-d1;
+    }
+    &:not([no-efx]):active {
+      background: $chartreuse-d2;
+    }
+  }
+  &[color="yellow"] {
+    background: $yellow;
+    &:not([no-efx]):hover {
+      background: $yellow-d1;
+    }
+    &:not([no-efx]):active {
+      background: $yellow-d2;
+    }
+  }
+  &[color="orange"] {
+    background: $orange;
+    &:not([no-efx]):hover {
+      background: $orange-d1;
+    }
+    &:not([no-efx]):active {
+      background: $orange-d2;
+    }
+  }
+  &[color="red"] {
+    background: $red;
+    &:not([no-efx]):hover {
+      background: $red-d1;
+    }
+    &:not([no-efx]):active {
+      background: $red-d2;
+    }
+  }
+  &[color="light-blue"] {
+    background: $light-blue;
+    &:not([no-efx]):hover {
+      background: $light-blue-d1;
+    }
+    &:not([no-efx]):active {
+      background: $light-blue-d2;
+    }
+  }
+  &[color="aqua"] {
+    background: $aqua;
+    &:not([no-efx]):hover {
+      background: $aqua-d1;
+    }
+    &:not([no-efx]):active {
+      background: $aqua-d2;
+    }
+  }
+  &[color="turq"] {
+    background: $turq;
+    &:not([no-efx]):hover {
+      background: $turq-d1;
+    }
+    &:not([no-efx]):active {
+      background: $turq-d2;
+    }
+  }
+  &[color="blue"] {
+    background: $blue;
+    &:not([no-efx]):hover {
+      background: $blue-d1;
+    }
+    &:not([no-efx]):active {
+      background: $blue-d2;
+    }
+  }
+  &[color="indigo"] {
+    background: $indigo;
+    &:not([no-efx]):hover {
+      background: $indigo-d1;
+    }
+    &:not([no-efx]):active {
+      background: $indigo-d2;
+    }
+  }
+  &[color="purple"] {
+    background: $purple;
+    &:not([no-efx]):hover {
+      background: $purple-d1;
+    }
+    &:not([no-efx]):active {
+      background: $purple-d2;
+    }
+  }
+  &[color="dark-pink"] {
+    background: $dark-pink;
+    &:not([no-efx]):hover {
+      background: $dark-pink-d1;
+    }
+    &:not([no-efx]):active {
+      background: $dark-pink-d2;
+    }
+  }
+  &[color="pink"] {
+    background: $pink;
+    &:not([no-efx]):hover {
+      background: $pink-d1;
+    }
+    &:not([no-efx]):active {
+      background: $pink-d2;
+    }
+  }
+  &[color="white"] {
+    background: $white;
+    &:not([no-efx]):hover {
+      background: $white-d1;
+    }
+    &:not([no-efx]):active {
+      background: $white-d2;
+    }
+  }
+  &[color="gray"] {
+    background: $gray;
+
+    &:not([no-efx]):hover {
+      background: $gray-d1;
+    }
+    &:not([no-efx]):active {
+      background: $gray-d2;
+    }
+  }
+  &[color="dark-gray"] {
+    background: $dark-gray;
+    &:not([no-efx]):hover {
+      background: $dark-gray-d1;
+    }
+    &:not([no-efx]):active {
+      background: #000;
+    }
+  }
+  &[color="black"] {
+    background: $black;
+    &:not([no-efx]):hover {
+      background: $black-l1;
+    }
+    &:not([no-efx]):active {
+      background: $black-l2;
+    }
+  }
+  //link
+  &[color="link"] {
+    background: transparent;
+    color: $blue;
+    text-decoration: underline;
+    &::before {
+      background: transparent;
+    }
+  }
+}
+
+.b-btn-gate {
+  &[color="green"] {
+    &[closed] {
+      color: $green !important;
+    }
+    &:not([no-efx]) {
+      &:not([closed]):hover {
+        color: $green;
+      }
+      box-shadow: 0 0 0 2px $green inset;
+    }
+    &::before {
+      background-color: $green;
+    }
+  }
+  &[color="chartreuse"] {
+    &[closed] {
+      color: $chartreuse !important;
+    }
+    &:not([no-efx]) {
+      &:not([closed]):hover {
+        color: $chartreuse;
+      }
+      box-shadow: 0 0 0 2px $chartreuse inset;
+    }
+    &::before {
+      background-color: $chartreuse;
+    }
+  }
+  &[color="yellow"] {
+    &[closed] {
+      color: $yellow !important;
+    }
+    &:not([no-efx]) {
+      &:not([closed]):hover {
+        color: $yellow;
+      }
+      box-shadow: 0 0 0 2px $yellow inset;
+    }
+    &::before {
+      background-color: $yellow;
+    }
+  }
+  &[color="orange"] {
+    &[closed] {
+      color: $orange !important;
+    }
+    &:not([no-efx]) {
+      &:not([closed]):hover {
+        color: $orange;
+      }
+      box-shadow: 0 0 0 2px $orange inset;
+    }
+    &::before {
+      background-color: $orange;
+    }
+  }
+  &[color="red"] {
+    &[closed] {
+      color: $red !important;
+    }
+    &:not([no-efx]) {
+      &:not([closed]):hover {
+        color: $red;
+      }
+      box-shadow: 0 0 0 2px $red inset;
+    }
+    &::before {
+      background-color: $red;
+    }
+  }
+  &[color="light-blue"] {
+    &[closed] {
+      color: $light-blue !important;
+    }
+    &:not([no-efx]) {
+      &:not([closed]):hover {
+        color: $light-blue;
+      }
+      box-shadow: 0 0 0 2px $light-blue inset;
+    }
+    &::before {
+      background-color: $light-blue;
+    }
+  }
+  &[color="aqua"] {
+    &[closed] {
+      color: $aqua !important;
+    }
+    &:not([no-efx]) {
+      &:not([closed]):hover {
+        color: $aqua;
+      }
+      box-shadow: 0 0 0 2px $aqua inset;
+    }
+    &::before {
+      background-color: $aqua;
+    }
+  }
+  &[color="turq"] {
+    &[closed] {
+      color: $turq !important;
+    }
+    &:not([no-efx]) {
+      &:not([closed]):hover {
+        color: $turq;
+      }
+      box-shadow: 0 0 0 2px $turq inset;
+    }
+    &::before {
+      background-color: $turq;
+    }
+  }
+  &[color="blue"] {
+    &[closed] {
+      color: $blue !important;
+    }
+    &:not([no-efx]) {
+      &:not([closed]):hover {
+        color: $blue;
+      }
+      box-shadow: 0 0 0 2px $blue inset;
+    }
+    &::before {
+      background-color: $blue;
+    }
+  }
+  &[color="indigo"] {
+    &[closed] {
+      color: $indigo !important;
+    }
+    &:not([no-efx]) {
+      &:not([closed]):hover {
+        color: $indigo;
+      }
+      box-shadow: 0 0 0 2px $indigo inset;
+    }
+    &::before {
+      background-color: $indigo;
+    }
+  }
+  &[color="purple"] {
+    &[closed] {
+      color: $purple !important;
+    }
+    &:not([no-efx]) {
+      &:not([closed]):hover {
+        color: $purple;
+      }
+      box-shadow: 0 0 0 2px $purple inset;
+    }
+    &::before {
+      background-color: $purple;
+    }
+  }
+  &[color="dark-pink"] {
+    &[closed] {
+      color: $dark-pink !important;
+    }
+    &:not([no-efx]) {
+      &:not([closed]):hover {
+        color: $dark-pink;
+      }
+      box-shadow: 0 0 0 2px $dark-pink inset;
+    }
+    &::before {
+      background-color: $dark-pink;
+    }
+  }
+  &[color="pink"] {
+    &[closed] {
+      color: $pink !important;
+    }
+    &:not([no-efx]) {
+      &:not([closed]):hover {
+        color: $pink;
+      }
+      box-shadow: 0 0 0 2px $pink inset;
+    }
+    &::before {
+      background-color: $pink;
+    }
+  }
+  &[color="white"] {
+    &[closed] {
+      color: $white !important;
+    }
+    &:not([no-efx]) {
+      &:not([closed]):hover {
+        color: $white;
+      }
+      box-shadow: 0 0 0 2px $white inset;
+    }
+    &::before {
+      background-color: $white;
+    }
+  }
+  &[color="gray"] {
+    &[closed] {
+      color: $gray !important;
+    }
+    &:not([no-efx]) {
+      &:not([closed]):hover {
+        color: $gray;
+      }
+      box-shadow: 0 0 0 2px $gray inset;
+    }
+    &::before {
+      background-color: $gray;
+    }
+  }
+  &[color="dark-gray"] {
+    &[closed] {
+      color: $dark-gray !important;
+    }
+    &:not([no-efx]) {
+      &:not([closed]):hover {
+        color: $dark-gray;
+      }
+      box-shadow: 0 0 0 2px $dark-gray inset;
+    }
+    &::before {
+      background-color: $dark-gray;
+    }
+  }
+  &[color="black"] {
+    &[closed] {
+      color: $black !important;
+    }
+    &:not([no-efx]) {
+      &:not([closed]):hover {
+        color: $black !important;
+      }
+      box-shadow: 0 0 0 2px $black inset;
+    }
+    &::before {
+      background-color: $black;
+    }
+  }
+
+  &[closed]:hover {
+    &[color="default"],
+    &[color="blue"],
+    &[color="gray"],
+    &[color="red"],
+    &[color="green"],
+    &[color="indigo"],
+    &[color="pink"],
+    &[color="dark-pink"],
+    &[color="orange"],
+    &[color="purple"],
+    &[color="turq"],
+    &[color="dark-gray"],
+    &[color="black"] {
+      color: white !important;
+    }
+    &[color="chartreuse"],
+    &[color="light-blue"],
+    &[color="aqua"],
+    &[color="yellow"],
+    &[color="white"] {
+      color: inherit !important;
+    }
+  }
+}
+// Revision 2023 //
