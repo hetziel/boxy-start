@@ -6,12 +6,80 @@
     <title>Boxy Style</title>
     <!-- Enlace al CSS compilado -->
     <link rel="stylesheet" href="./cdn/boxy-0.25.4.1.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0e7ff 0%, #f0fdfa 100%);
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .header {
+            background: #312e81;
+            color: #fff;
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 8px #0001;
+        }
+        .main-card {
+            background: #fff;
+            max-width: 400px;
+            margin: 3rem auto;
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 24px #312e8133;
+            padding: 2.5rem 2rem;
+            text-align: center;
+        }
+        .main-card h2 {
+            color: #312e81;
+            margin-bottom: 1rem;
+        }
+        .main-card p {
+            color: #64748b;
+            margin-bottom: 2rem;
+        }
+        .main-card button {
+            background: #312e81;
+            color: #fff;
+            border: none;
+            border-radius: 0.75rem;
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .main-card button:hover {
+            background: #4338ca;
+        }
+        .footer {
+            text-align: center;
+            color: #64748b;
+            padding: 1rem 0;
+            font-size: 0.95rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            background: #f1f5f9cc;
+            backdrop-filter: blur(2px);
+        }
+    </style>
 </head>
 <body>
-    <div id="app">
-        <h1>Bienvenido a Boxy Style</h1>
-        <p>Este es un proyecto configurado con Vite y SCSS.</p>
-    </div>
+    <header class="header">
+        <h1>Boxy Style</h1>
+        <p>¡Diseño moderno y elegante con Boxy!</p>
+    </header>
+    <main>
+        <div class="main-card">
+            <img src="https://boxycss.com/assets/boxy-logo.svg" alt="Boxy Logo" width="80" style="margin-bottom:1rem;">
+            <h2>Bienvenido a Boxy Style</h2>
+            <p>Este es un proyecto configurado con Vite y SCSS.<br>
+            Explora los componentes y personaliza tu interfaz fácilmente.</p>
+            <button onclick="alert('¡Gracias por probar Boxy!')">Comenzar</button>
+        </div>
+    </main>
+    <footer class="footer">
+        Hecho con <span style="color:#f59e42;">&#9733;</span> por tu equipo Boxy
+    </footer>
     <!-- Enlace al archivo JavaScript -->
     <script type="module" src="./src/js/boxy.js"></script>
 </body>
