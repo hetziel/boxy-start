@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxy Style</title>
+    <!-- Enlace al CSS compilado -->
+    <link rel="stylesheet" href="./dist/cdn/boxy-0.25.4.1.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0e7ff 0%, #f0fdfa 100%);
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .header {
+            background: #312e81;
+            color: #fff;
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 8px #0001;
+        }
+        .header nav {
+            margin-top: 1rem;
+        }
+        .header a {
+            color: #f0fdfa;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 500;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+        .main-card {
+            background: #fff;
+            max-width: 400px;
+            margin: 3rem auto;
+            border-radius: 1.5rem;
+            box-shadow: 0 4px 24px #312e8133;
+            padding: 2.5rem 2rem;
+            text-align: center;
+        }
+        .main-card h2 {
+            color: #312e81;
+            margin-bottom: 1rem;
+        }
+        .main-card p {
+            color: #64748b;
+            margin-bottom: 2rem;
+        }
+        .main-card .custom-btn {
+            background: #312e81;
+            color: #fff;
+            border: none;
+            border-radius: 0.75rem;
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .main-card .custom-btn:hover {
+            background: #4338ca;
+        }
+        .footer {
+            text-align: center;
+            color: #64748b;
+            padding: 1rem 0;
+            font-size: 0.95rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            background: #f1f5f9cc;
+            backdrop-filter: blur(2px);
+        }
+    </style>
+  <script type="module" crossorigin src="/assets/index.js"></script>
+  <link rel="modulepreload" crossorigin href="/cdn/boxy-script-0.25.4.1.js">
+  <link rel="stylesheet" crossorigin href="/assets/index.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Boxy Style</h1>
+        <p>¡Diseño moderno y elegante con Boxy!</p>
+        <nav style="margin-top:1rem;">
+            <a href="/">Inicio</a>
+            <a href="/about">Acerca de</a>
+            <a href="/contact">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <div id="app">
+           
+        </div>
+    </main>
+    <footer class="footer">
+        Hecho con <span style="color:#f59e42;">&#9733;</span> por tu equipo Boxy
+    </footer>
+    <!-- Enlace al archivo JavaScript -->
+</body>
+</html>
