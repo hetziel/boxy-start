@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 const version = '0.25.4.1';
 
@@ -35,6 +36,17 @@ export default defineConfig({
             },
         },
     },
+    plugins: [
+        viteStaticCopy({
+            targets: [
+                {
+                    src: 'dist/cdn',
+                    dest: '../projects'
+                }
+            ],
+            watch: true
+        })
+    ],
     server: {
         open: false,
     },
